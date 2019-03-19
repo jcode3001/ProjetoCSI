@@ -1,0 +1,12 @@
+/* Limpar padrões do navegador*/
+{
+	border:0;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+}
+.container{
+    width: 960px;   /* Ainda é considerado como tamanho de referência no desenvolvimento de layout */
+    margin: 0 auto; /* Centralizar conteúdo na página */
+}

@@ -1,0 +1,422 @@
+.container {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.75);
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#body {
+    background-image: linear-gradient(to bottom, white, #a9ccad);
+    height: auto;
+}
+
+#fundoSistemaInterno {
+    background-image: linear-gradient(to bottom, white, rgba(208, 235, 218, 0.63));
+    height: auto;
+}
+
+#login {
+    margin: 0px !important;
+}
+
+.btn {
+    font-size: 18px !important;
+}
+
+#rodape {
+    clear: both;
+    font-size: 15px;
+    text-align: center;
+    background-color: #3b884d;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+#whatsapp{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px;
+}
+
+#facebook{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px;
+}
+
+#btnentrar {
+    background-color: #4c89e3;
+}
+
+#btnAntropometria1 {
+    background-color: #4c89e3;
+}
+
+#btnCadastrar {
+    background-color: #4c89e3;
+}
+
+aside {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+section {
+    margin-right: 50px;
+}
+
+#carouselExampleControls {
+    margin: 3px 0 !important;
+}
+
+#nomeNutricionista {
+    text-align: center;
+}
+
+#cardsIndex {
+    margin: 30px 0px;
+}
+
+#portaretrato {
+    float: left !important;
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.d-block {
+    height: 500px;
+}
+
+h3 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#list-tab {
+    text-align: center;
+    width: 400px;
+    margin: 150px 120px;
+}
+
+.navbar {
+    background-color: rgb(44, 197, 77);
+}
+
+#list-home-list {
+    background-color: rgb(44, 197, 77);
+    border-color: rgb(44, 197, 77);
+}
+
+
+.dropdown {
+    margin-right: 50px;
+}
+
+#menuNutricionista {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#menuNutricionista1 {
+    text-align: center;
+    padding-right: 50px;
+    font-size: 12px;
+}
+
+#multiCollapseExample1 {
+    margin-top: 20px;
+}
+
+#fitaMetrica {
+    width: auto;
+    height: auto;
+    margin-top: 183px;
+    position: absolute;
+    margin-left: 319px;
+    display: inline-block;
+    z-index: 10;
+}
+
+.fa-heartbeat {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    margin-left: 12px;
+}
+
+.fa-cheese {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.fa-apple-alt {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.fa-carrot {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.fa-weight {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.fa-dumbbell {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+.fa-mouse-pointer {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+#microscopio {
+    width: 63px;
+    height: 63px;
+}
+
+#sacolaDeCompras {
+    width: 60px;
+    height: 60px;
+}
+
+#serginga {
+    width: 35px;
+    height: 35px;
+}
+
+#gotaDeSangue {
+    width: 35px;
+    height: 35px;
+}
+
+#tuboDeEnsaio {
+    width: 65px;
+    height: 65px;
+    margin-left: 33px;
+    margin-top: 30px;
+}
+
+#calculadora {
+    width: 45px;
+    height: 45px;
+}
+
+
+#virus {
+    width: 40px;
+    height: 40px;
+}
+
+#prancheta {
+    width: 45px;
+    height: 45px;
+}
+
+#familia {
+    width: 39px;
+    height: 39px;
+}
+
+#peixePalhaco {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+#exameSaude {
+    width: 40px;
+    height: 40px;
+}
+
+#comprimidos {
+    width: 40px;
+    height: 40px;
+}
+
+#dinheiroNaMão {
+    width: 40px;
+    height: 40px;
+}
+
+#maca {
+    width: 40px;
+    height: 40px;
+}
+
+#balanca {
+    width: 63px;
+    height: 63px;
+}
+
+.fa-vial {
+    font-size: 40px;
+    color: #8d1e1e;
+    margin-left: 43px;
+    margin-top: 13px;
+}
+
+.fa-circle {
+    font-style: italic !important;
+    transform: rotate(40deg);
+    transform-origin: left top 6;
+}
+
+#listNutri {
+    float: left;
+    width: 200px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.input-group {
+    padding-top: 10px;
+}
+
+#gerarIMC {
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+#h5Antro {
+    margin-top: 60px;
+}
+
+#gerarMedidas {
+    margin-left: 250px;
+    margin-top: 100px;
+    width: auto;
+}
+
+.alturaAntro {
+    height: 75px;
+}
+
+.alert {
+    width: 300px;
+}
+
+#form-Bio {
+    margin-top: 60px;
+    margin-right: 40px;
+    margin-left: 250px;
+    padding-right: 100px;
+}
+
+#form-Bio1 {
+    margin-right: 0px;
+}
+
+#form-Bio2 {
+    margin-left: 0px;
+}
+
+#form-VET {
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    float: left;
+    display: inline-block;
+    width: 300px;
+}
+
+#form-Clinico {
+    margin-top: 60px;
+    margin-left: 250px;
+}
+
+#tabelaAT {
+    float: right;
+    width: 400px;
+    margin-top: 50px;
+    margin-right: 40px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#TMB-Kcal {
+    font-size: 20px;
+    display: inline-block;
+}
+
+#tmb {
+    margin-left: 310px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#vet {
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 110px;
+}
+
+#tabelaAlimentos {
+    width: 890px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#tabelaConsultaPaciente {
+    width: 870px;
+    margin-top: 50px;
+}
+
+.table-overflow {
+    margin-top: 20px;
+    margin-left: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, white, rgba(208, 235, 218, 0.63));
+}
+
+.table-overflow1 {
+    margin-top: 5%;
+    max-height: 400px;
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, white, rgba(208, 235, 218, 0.63));
+}
+
+#msgErro {
+    width: auto;
+    display: inline-block;
+    margin-left: 330px;
+    margin-top: 50px;
+    font-style: oblique;
+}
+
+#btnConfirmacao {
+    margin-top: 10px;
+}
+
+#secaoDietoterapia {
+    margin-left: 12px;
+    margin-top: 40px;
+    display: inline-block;
+    float: left;
+}
+
+.fa-trash-alt {
+    color: #c35050;
+}
+
+#inclusaoAlimentos {
+    margin-top: 30px;
+}
