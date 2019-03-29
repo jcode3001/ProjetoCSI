@@ -1,3 +1,9 @@
+<?php
+include_once 'AAAA.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -86,17 +92,17 @@
         <div id="secaoDietoterapia">
             <div>
                 <span id="TMB-Kcal" class="badge badge-pill badge-success" style="margin-right: 132px;">IMC:</span>
-                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled">
+                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled" value="<?php echo $imc; ?>" >
             </div>
             <br>
             <div>
                 <span id="TMB-Kcal" class="badge badge-pill badge-success" style="margin-right: 28px;">Peso Atual (kg):</span>
-                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled">
+                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled" value="<?php echo $peso; ?>">
             </div>
             <br>
             <div>
                 <span id="TMB-Kcal" class="badge badge-pill badge-success" style="margin-right: 78px;">TMB/Kcal:</span>
-                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled">
+                <input class="col-4" type="text" style="border-radius: 4px;" disabled="disabled" value="<?php echo $tmb; ?>">
             </div>
             <br>
             <div>

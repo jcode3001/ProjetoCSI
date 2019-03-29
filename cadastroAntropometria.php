@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Dietpro</title>
     <?php include_once 'head.php'; ?>
+    <?php include_once "AAAA.php"; ?>
 
 </head>
 
@@ -13,6 +14,7 @@
     <div class="">
 
         <?php
+        
     $altura           = $_POST["altura"];
     $pesoAtual        = $_POST["pesoAtual"];
     $bracoEsq         = $_POST["bracoEsq"];
@@ -28,7 +30,7 @@
     $quadriceps       = $_POST["quadriceps"];
     $coxaEsq          = $_POST["coxaEsq"];
     $coxaDir          = $_POST["coxaDir"];
-    $panturrilhaEsq   = $_POST["panturrilhaEsq"];
+    $panturrilhaEsq   = $_POST["panturrilhaEsq"]; 
     $panturrilhaDir   = $_POST["panturrilhaDir"];
     $antebracoEsq     = $_POST["antebracoEsq"];
     $antebracoDir     = $_POST["antebracoDir"];
@@ -37,7 +39,7 @@
         
      $ok = $altura != "" && $pesoAtual != ""; 
     
-    $sql = "insert into a_antropometrica values(null, '".$bracoDir."','".$altura."','".$torax."','".$subescapular."','".$coxaEsq."','".$coxaDir."','".$panturrilhaEsq."','".$panturrilhaDir."','".$cintura."','".$quadril."','".$abdominalCir."','".$quadriceps."','".$pesoAtual."','".$suprailiaca."','".$tricipital."','".$abdominal."','".$antebracoEsq."','".$antebracoDir."','".$bracoEsq."')";
+    $sql = "insert into a_antropometrica values('$id', '".$bracoDir."','".$altura."','".$torax."','".$subescapular."','".$coxaEsq."','".$coxaDir."','".$panturrilhaEsq."','".$panturrilhaDir."','".$cintura."','".$quadril."','".$abdominalCir."','".$quadriceps."','".$pesoAtual."','".$suprailiaca."','".$tricipital."','".$abdominal."','".$antebracoEsq."','".$antebracoDir."','".$bracoEsq."')";
     
         
 

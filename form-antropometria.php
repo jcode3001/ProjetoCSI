@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Dietpro</title>
     <?php include_once 'head.php'; ?>
+<!-- O arquivo AAAA.php ele trabalha as funcoes e gera os dados -->
+    <?php include_once 'AAAA.php'; ?> 
 
 
 </head>
@@ -95,6 +97,12 @@
                         <label style="margin-left: 70px;" for="altura">Altura (m) :</label>
                         <input style="text-align: center;" type="number" class="form-control" id="altura" placeholder="" name="altura" min="0" max="3" step="0.01">
                     </div>
+                    
+                    <div class="form-group col-md-6" style="padding-left: 30%;">   
+                        <label  for="altura">Imc Gerado:</label>
+                        <input style="text-align: center;" type="number" class="form-control"  placeholder="<?php echo $imc ?>" disabled = "disabled" min="0" max="3" step="0.01">
+                    </div>
+
                 </div>
 
                 <div class="form-row">
@@ -102,10 +110,19 @@
                         <label style="margin-left: 53px;" for="pesoAtual">Peso Atual (kg)</label>
                         <input style="text-align: center;" type="number" class="form-control" id="pesoAtual" placeholder="" name="pesoAtual" min="0" max="300" step="0.01">
                     </div>
-                </div>
-                <a style=" margin-left: 52px;" id="btnentrar" class="btn btn-primary">Gerar IMC</a>
 
+                     <div class="form-group col-md-6" style="padding-left: 30%;">
+                        
+                        <label  for="altura">Classificação:</label>
+                        <input style="text-align: center;" type="text" class="form-control" placeholder="<?php echo $class_imc; ?>" disabled = "disabled" min="0" max="3" step="0.01">
+                    </div>
+                </div>
+                            
+
+                <a style=" margin-left: 52px;" id="btnentrar" class="btn btn-primary">Gerar IMC</a>
             </div>
+
+            
 
 
             <div id="gerarMedidas">
@@ -169,6 +186,28 @@
                         <input type="number" class="form-control" id="quadriceps" placeholder="" name="quadriceps">
                     </div>
 
+                <div  id="grafico_percentualDeGordura"  style="width: 400px; height: 210px; margin-left: 450px; background-color: rgba(208, 235, 218, 0.63); border-style:ridge;">
+                        <?php include_once 'AAAA.php'; ?>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                            //inserindo valores 
+                            var data = google.visualization.arrayToDataTable([
+                            ['item', 'sexo dos usuarios'],
+                            ['Gordura',   <?php echo $Percentual;  ?>],
+                            ['Livre de Gordura',   <?php echo 100 - $Percentual  ?>],
+                            ]);
+                    //tipo do texto
+                            var options = {
+                            title: 'Percentual de Gordura'
+                            };
+                            var chart = new google.visualization.PieChart(document.getElementById('grafico_percentualDeGordura'));
+                            chart.draw(data, options);
+                            }
+                        </script>
+                    </div>
 
                 </div>
 
