@@ -2,10 +2,9 @@
 session_start();
 include_once 'funcoesProjeto.php';
 include_once 'conexao.php';
+$id = $_SESSION['id'];
 
-echo $_SESSION["login"];
-echo $_SESSION["id_cliente"];
-
+echo $id;
 
 $antropometrico = mysqli_query($con,"SELECT `ALTURA`,`PESO`,`DC_TRICIPITAL`,`DC_SUBESCAPULAR_AXILAR`,`DC_SUPRAILIACA`,`DC_ABDOMINAL`,`DC_QUADRICEPS` FROM `a_antropometrica` WHERE `ID_ANTROPOMETRIA` = '$id'");
 $cliente = mysqli_query($con,"SELECT `SEXO`,`DT_NASCIMENTO` FROM `cliente` WHERE `ID_CLIENTE` = '$id'");

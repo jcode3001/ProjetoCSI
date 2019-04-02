@@ -10,14 +10,15 @@
     $sql = "select nome, email, senha, id_cliente from cliente where email = '".$login."' and senha = '".$senha."';";
     $query = mysqli_query($con, $sql) or die(mysqli_error($con));
     $row = mysqli_num_rows($query);
-    $nome = mysqli_fetch_assoc($query)["nome"];
-    $id = mysqli_fetch_assoc($query)["id_cliente"];
+    
     
 
 if ($row > 0)
-{
-    $_SESSION["login"] = $nome;
-    $_SESSION["id_cliente"] = $id;
+{ $dados = mysqli_fetch_array($query);
+
+    $_SESSION['login'] = $dados[1];
+    $_SESSION['nome'] = $dados[0];
+    $_SESSION['id'] = $dados[3];
     header("Location:nutricionistaMenu.php");
 
     //
