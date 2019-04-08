@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include_once 'funcoesProjeto.php';
 include_once 'conexao.php';
 $id = $_SESSION['id'];
@@ -50,11 +50,38 @@ $class_imc = class_imc($PESO,$ALTURA,$DT_NASCIMENTO);
 
 $Percentual = PercentualGordura($SEXO,$DC_TRICIPITAL,$DC_SUBESCAPULAR_AXILAR,$DC_SUPRAILIACA,$DC_ABDOMINAL,$DC_QUADRICEPS);
 
+
 }else{
 $imc = "Sem Dados";
 $tmb = "Sem Dados";
 $class_imc = "Sem Dados";
 $Percentual = 0;
+
+$ALTURA = "Sem Dados";
+$PESO = "Sem Dados";
+
+$CIR_BRACO_DIR = 0;
+$CIR_BRACO_ESQ = 0;
+
+$CIR_ANTEBRACO_DIR = 0;
+$CIR_ANTEBRACO_ESQ = 0;
+
+$CIR_COXA_ESQ = 0;
+$CIR_COXA_DIR = 0;
+
+$CIR_PANTURRILHA_DIR = 0;
+$CIR_PANTURRILHA_ESQ = 0;
+
+$CIR_TORAX = 0;
+$CIR_CINTURA = 0;
+$CIR_QUADRIL = 0;
+$CIR_ABDOMINAL = 0;
+
+$DC_TRICIPITAL = 0;
+$DC_SUBESCAPULAR_AXILAR = 0;
+$DC_SUPRAILIACA = 0;
+$DC_ABDOMINAL = 0;
+$DC_QUADRICEPS = 0;
 }
 
 
