@@ -5,8 +5,10 @@
 
     <meta charset="UTF-8">
     <title>Dietpro</title>
-    <?php include_once 'head.php';
+    <?php 
+    include_once 'head.php';
     include_once 'verificaLogin.php';
+    include_once 'AAAA.php';
     ?>
 
 
@@ -45,7 +47,7 @@
         <h6 id="menuNutricionista1"><i>Fonte: FAO,WHO,UNU,1985</i></h6>
 
         <div id="tmb">
-            <span id="TMB-Kcal" class="badge badge-pill badge-success">TMB/Kcal:</span> <input type="text" style="border-radius: 4px;">
+            <span id="TMB-Kcal" class="badge badge-pill badge-success">TMB/Kcal:</span> <input  value="<?php echo "  ".$tmb; ?>" type="text" style="border-radius: 4px;">
             <div id="vet">
                 <span id="TMB-Kcal" class="badge badge-pill badge-success">VET/Kcal:</span> <input type="text" style="border-radius: 4px;">
             </div>

@@ -73,7 +73,7 @@
 
        
 
-        <div id="listNutri" class="list-group">
+         <div id="listNutri" class="list-group">
             <a href="#" class="list-group-item list-group-item-action active">
                 Menu
             </a>
@@ -83,12 +83,12 @@
             <a href="form-clinicaNutricional.php" class="list-group-item list-group-item-action">Av. Clínica nutri.</a>
             <a href="form-VetFao.php" class="list-group-item list-group-item-action">Vet FAO</a>
             <a href="tabelaAlimentos.php" class="list-group-item list-group-item-action">Lista de alimentos</a>
-            <a href="#" class="list-group-item list-group-item-action">Recordatório 24h</a>
+            <a href="formRecordatorio.php" class="list-group-item list-group-item-action">Recordatório 24h</a>
             <a href="form-Dietoterapia.php" class="list-group-item list-group-item-action">Dietoterapia</a>
             <a href="#" class="list-group-item list-group-item-action">Lista de substituições</a>
             <a href="#" class="list-group-item list-group-item-action">Impressão de dieta</a>
         </div>
-
+        
         <h4 id="menuNutricionista">Avaliação Antropométrica &nbsp; <img id="balanca" src="img/icons8-balan%C3%A7a-industrial-48.png" alt=""></h4>
 
         

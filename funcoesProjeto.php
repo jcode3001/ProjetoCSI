@@ -62,6 +62,7 @@ function idade($nascimento){
 }
 function imc($peso,$altura){
 	$imc = $peso/($altura*$altura);
+	$imc =  number_format($imc, 2, '.', '');
 	return $imc;
 }
 //indice de massa corporal

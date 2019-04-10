@@ -110,12 +110,12 @@ include_once 'AAAA.php';
             <br>
             <div>
                 <span id="TMB-Kcal" class="badge badge-pill badge-success" style="margin-right: 38px;">VET Calculado:</span>
-                <input class="col-4" type="text" style="border-radius: 4px;" value="<?php echo 2000; ?>" disabled="disabled">
+                <input class="col-4" type="text" style="border-radius: 4px;" value="<?php echo "null"; ?>" disabled="disabled">
             </div>
             <br>
             <div>
                 <span id="TMB-Kcal" class="badge badge-pill badge-success">VET Dietoterápico:</span>
-                <input class="col-4" type="text" style="border-radius: 4px;" value="<?php echo 1938; ?>" disabled="disabled">
+                <input class="col-4" type="text" style="border-radius: 4px;" value="<?php echo "null"; ?>" disabled="disabled">
             </div>
         </div>
 
