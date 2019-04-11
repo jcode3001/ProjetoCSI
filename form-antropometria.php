@@ -10,7 +10,7 @@
     <?php include_once 'head.php'; ?>
 <!-- O arquivo AAAA.php ele trabalha as funcoes e gera os dados -->
     <?php include_once 'AAAA.php'; ?> 
-
+    <script type="text/javascript" src="js/antropometrico.js"></script>
 
 </head>
 
@@ -96,49 +96,27 @@
         <form action="cadastroAntropometria.php" method="post">
 
             <div id="gerarIMC">
-
                 <div class="form-row">
-
                     <div class="form-group col-md-3">
-                        <h5 style="text-align: center;"><i>IMC</i></h5>
-
                         <label style="margin-left: 70px;" for="altura">Altura (m) :</label>
-                        <input style="text-align: center;" type="number" class="form-control" id="altura" placeholder="<?php echo $ALTURA; ?>" name="altura" min="0" max="3" step="0.01">
+                        <input class="form-control" type="text" id="altura"  min="0" max="3" step="0.01" onblur="imc();" /> <br>
                     </div>
-                    
-                    <div class="form-group col-md-6" style="padding-left: 30%;">   
-                        <label  for="altura">Imc Gerado:</label>
-                        <input style="text-align: center;" type="number" class="form-control"  placeholder="<?php echo $imc ?>" disabled = "disabled" min="0" max="3" step="0.01">
+                    <div class="form-row">
+                        <label style="margin-left: 70px;" for="altura">Imc :</label>
+                        <span  class="form-control" style="margin-left: 100px;" id="resultado"></span>
                     </div>
-
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label style="margin-left: 53px;" for="pesoAtual">Peso Atual (kg)</label>
-                        <input style="text-align: center;" type="number" class="form-control" id="pesoAtual" placeholder="<?php echo $PESO; ?>" name="pesoAtual" min="0" max="300" step="0.01">
+                        <input class="form-control" type="text" id="pesoAtual"  min="0" max="3" step="0.01" onblur="imc();" /> <br>
                     </div>
-
-                     <div class="form-group col-md-6" style="padding-left: 30%;">
-                        
-                        <label  for="altura">Classificação:</label>
-                        <input style="text-align: center;" type="text" class="form-control" placeholder="<?php echo $class_imc; ?>" disabled = "abled" min="0" max="3" step="0.01">
-                    </div>
-
-                </div>
-                <a style=" margin-left: 52px;" type="submit" id="btnentrar" class="btn btn-primary">Gerar IMC</a>
-
+                </div>    
+               
+                
             </div>
-            <?php  
-                if (isset($_GET["altura"]) && isset($_GET["peso"])) {
-                    $ALTURA = $_GET["altura"];
-                        $PESO = $_GET["peso"];
-
-                        $imc = imc($PESO,$ALTURA);
-                        echo $imc;
-                }
-            ?>   
-           
+            
 
 
             <div id="gerarMedidas">
