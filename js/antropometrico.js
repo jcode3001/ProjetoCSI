@@ -1,20 +1,3 @@
-function clicar(){
-	var num1 = document.querySelector("#altura").value;
-	var num2 = document.querySelector("#peso").value;
-	var resultado = parseInt(num1) * parseInt(num2);
-	document.querySelector(".resultado").innerHTML = resultado;
-
-}
-
-function imc1() {
-    var altura = Number(document.getElementById("#altura").value);
-    var peso = Number(document.getElementById("#pesoAtual").value);
-    var elemResult = document.getElementById(".imc");
-
-   
-       elemResult.innerText =  String(peso/(altura*altura));
-    
-}
 
 function imc() {
     var altura = Number(document.getElementById("altura").value);
@@ -24,4 +7,13 @@ function imc() {
    
        elemResult.innerText =  String(peso/(altura*altura));
     
+}
+
+function grafico() {
+  var tricipital = Number(document.getElementById('tricipital').value);
+  var supraliaca = Number(document.getElementById('suprailiaca').value);
+  var quadriceps = Number(document.getElementById('quadriceps').value);
+  var subescapular = Number(document.getElementById('subescapular').value);
+  var abdominal = Number(document.getElementById('abdominal').value);
+
 }
