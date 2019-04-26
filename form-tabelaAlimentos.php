@@ -17,37 +17,12 @@
     <div id="fundoSistemaInterno" class="container">
 
 
-         <nav id="teste" class="navbar navbar-dark" style="background-color:#3b884d;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span> <i class="fas fa-carrot animated rubberBand" style="font-size: 30px; color: #c78713"></i> &nbsp; <i class="fas fa-apple-alt animated rubberBand" style="font-size: 30px; color: #d83838"></i> &nbsp; <i class="fas fa-cheese animated rubberBand" style="font-size: 30px; color: #ccc624"></i> </span>
-            </button>
-        <div> <img src="img/icons8-checked-user-male-26.png" alt=""> <b> Bem vindo(a):</b> <?php echo "<i>"  .$_SESSION["login"] . "</i>" ; ?> <a style="text-decoration: none;" href="logout.php">&nbsp;<img id="logout" src="img/icons8-exit-48.png" alt=""></a> 
-        </div>
-        </nav>
-
-        <div id="listNutri" class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-                Menu
-            </a>
-            <a href="nutricionistaMenu.php" class="list-group-item list-group-item-action">Dados do paciente</a>
-            <a href="#" class="list-group-item list-group-item-action">Av. Antropométrica <i class="fas fa-check" style="font-size: 10px; color: #3b884d"></i></a>
-            <a href="form-bioquiomica.php" class="list-group-item list-group-item-action">Av. Bioquímica</a>
-            <a href="form-clinicaNutricional.php" class="list-group-item list-group-item-action">Av. Clínica nutri.</a>
-            <a href="form-VetFao.php" class="list-group-item list-group-item-action">Vet FAO</a>
-            <a href="tabelaAlimentos.php" class="list-group-item list-group-item-action">Lista de alimentos</a>
-            <a href="formRecordatorio.php" class="list-group-item list-group-item-action">Recordatório 24h</a>
-            <a href="form-Dietoterapia.php" class="list-group-item list-group-item-action">Dietoterapia</a>
-            <a href="#" class="list-group-item list-group-item-action">Lista de substituições</a>
-            <a href="#" class="list-group-item list-group-item-action">Impressão de dieta</a>
-        </div>
+        <?php 
+        include_once "html/barra_nav.php";
+        include_once "html/barra_lateral.php";
+        ?>
 
         <h4 id="menuNutricionista">Tabela de Alimentos&nbsp; <img id="sacolaDeCompras" src="img/icons8-sacola-de-compras-48.png" alt=""></h4>
-
-
-
-
-
-
 
         <div class="container" id="tabelaAlimentos">
 
@@ -1175,12 +1150,9 @@
             </div>
 
         </div>
+       
+             <?php include_once 'html/rodape.php'; ?>
 
-
-
-        <footer class="container" id="rodape">
-             <?php include_once 'rodape.php'; ?>
-        </footer>
     </div>
 
 </body>

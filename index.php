@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,11 +7,18 @@
     <meta charset="UTF-8">
     <title>Dietpro</title>
     <?php include_once 'head.php';?>
-    
-
-
 
 </head>
+
+<script>
+    
+$(document).ready(function() {
+    $('.addTel1').hide();
+    $('#whatsapp').click(function () {
+        $('.addTel1').toggle();
+    });
+});
+    </script>
 
 <body id="body">
 
@@ -25,24 +33,19 @@
                     <a class="btn btn-secondary dropdown-toggle navbar-brand" href="#" role="button" id="<dropdownMenuL></dropdownMenuL>ink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         LOGIN
                     </a>
-
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">
                             <div class="">
                                 <form action="session.php" method="post" class="px-4 py-3">
                                     <div class="form-group">
                                         <label for="exampleDropdownFormEmail1"><i class="fab fa-nutritionix" style="font-size: 30px; color:#3b884d; "></i> &nbsp; Endereço E-mail</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@email.com" name="login">
+                                        <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@email.com" name="login" re>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleDropdownFormPassword1">Senha</label>
                                         <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha" name="senha">
                                     </div>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                        <label class="form-check-label" for="dropdownCheck">
-                                            Lembre-me
-                                        </label>
                                     </div>
                                     <button id="btnentrar" type="submit" class="btn btn-primary">Entrar</button>
                                 </form>
@@ -209,11 +212,15 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label style="margin-left: 35px;" for="dataNascimento">Data de Nascimento</label> &nbsp; <i class="fas fa-calendar-day" style="font-size: 25px; color: #314bd8"></i>
-                                    <input style="text-align: center;" type="date" class="form-control" id="dataNascimento" placeholder="Data de Nascimento" name="dataNascimento">
+                                    <input style="text-align: center; padding-left: 15%;" type="date" class="form-control" id="dataNascimento" placeholder="Data de Nascimento" name="dataNascimento">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label style="margin-left: 90px;" for="sexo">Sexo</label> &nbsp; <i class="fas fa-male" style="font-size: 25px; color: #314bd8"></i> <i class="fas fa-female" style="font-size: 25px; color: #be31d8"></i>
-                                    <input style="text-align: center;" type="text" class="form-control" id="sexo" placeholder="Sexo" name="sexo">
+                                    <select type="text" class="form-control" id="sexo" name="sexo">
+                                        <option value="" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Selecione o Sexo--</option>
+                                        <option value="Masculino">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masculino</option>
+                                        <option value="Feminino">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feminino</option>
+                                    </select>
                                 </div>
 
                             </div>
@@ -243,9 +250,12 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label style="margin-left: 90px;" for="cpf">Cpf</label> &nbsp; <i class="far fa-id-card" style="font-size: 25px; color: #d11818"></i>
-                                    <input style="text-align: center;" type="cpf" class="form-control" id="email1" placeholder="gertrudes@bol.com.br" name="cpf">
+                                    <input style="text-align: center;" type="cpf" class="form-control" id="email1" placeholder="024.024.024-24" name="cpf">
                                 </div>
 
+                            </div>
+                            <div id="campos">
+                                <p>* Preencher todos os campos</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

@@ -62,6 +62,7 @@ function idade($nascimento){
 }
 function imc($peso,$altura){
 	$imc = $peso/($altura*$altura);
+	$imc =  number_format($imc, 2, '.', '');
 	return $imc;
 }
 //indice de massa corporal
@@ -195,10 +196,11 @@ function vet($tmb,$naf){
 //percentual de gordura
 function PercentualGordura($sexo,$tricipital,$subescapular,$suprailiaca,$abdominal,$quadriceps){
 	if($sexo == 'Masculino'){
-		$gordura = (($tricipital+$subescapular+$suprailiaca+$abdominal)*0.153*5.783)/100;
+		$gordura = ($tricipital+$subescapular+$suprailiaca+$abdominal)*0.153*5.783/100;
+		
 	}
 	elseif($sexo == 'Feminino'){
-		$gordura = (($tricipital+$subescapular+$suprailiaca+$abdominal+$quadriceps)*0.8*0.153+5.783)/100;
+		$gordura = ($tricipital+$subescapular+$suprailiaca+$abdominal+$quadriceps)*0.8*0.153+5.783/100;
 	}
 return $gordura;
 }
