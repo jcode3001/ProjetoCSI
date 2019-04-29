@@ -79,7 +79,7 @@
                 
                 include_once 'excluirCliente.php';
                 
-                $sql = "select nome,telefone,endereco,cidade,estado_civil,dt_nascimento,sexo,id_cliente from cliente where nome like '".$nome."%'";
+                $sql = "select * from cliente where nome like '".$nome."%'";
                 
                 $result = mysqli_query($con, $sql);
                 
@@ -98,6 +98,7 @@
                     <th style="color: #E8850C">Estado civil</th>
                     <th style="color: #E8850C">Data de nascimento</th>
                     <th style="color: #E8850C">Excluir Paciente</th>
+                    <th style="color: #E8850C">Gerenciar Paciente</th>
                 </tr>
 
 
@@ -108,13 +109,17 @@
                         echo "<tr>"; ?>
                 <td><i class="fas fa-book-open" style="color: #E8850C"></i></td>
                 <?php
-                        echo "<td>".$row["nome"]."</td>";
-                        echo "<td>".$row["telefone"]."</td>";
-                        echo "<td>".$row["endereco"]."</td>";
-                        echo "<td>".$row["cidade"]."</td>";
-                        echo "<td>".$row["estado_civil"]."</td>";
-                        echo "<td>".date('d-m-Y', strtotime($row["dt_nascimento"]))."</td>";  
-                        echo "<td><a href='#' onclick='excluir(".$row["id_cliente"].")'><i class='far fa-trash-alt' style='padding-left: 25px' id='delet'></i></td>";
+                        echo "<td>".$row[1]."</td>";
+                        echo "<td>".$row[2]."</td>";
+                        echo "<td>".$row[3]."</td>";
+                        echo "<td>".$row[4]."</td>";
+                        echo "<td>".$row[5]."</td>";
+                        echo "<td>".date('d-m-Y', strtotime($row[6]))."</td>";  
+                        echo "<td><a href='#' onclick='excluir(".$row[0].")'><i class='far fa-trash-alt' style='padding-left: 25px' id='delet'></i></td>"; 
+                
+                        
+                        echo"<td><a href='form-antropometria.php?id=".$row[0]."' >   [Edit]   </a></td>";
+                     
                         echo "</tr>";
                     } ?>
             </table>

@@ -2,7 +2,7 @@
 
 include_once 'funcoesProjeto.php';
 include_once 'conexao.php';
-$id = $_SESSION['id'];
+
 
 $antropometrico = mysqli_query($con,"SELECT * FROM `a_antropometrica` WHERE `ID_ANTROPOMETRIA` = '$id'");
 $cliente = mysqli_query($con,"SELECT `SEXO`,`DT_NASCIMENTO` FROM `cliente` WHERE `ID_CLIENTE` = '$id'");
