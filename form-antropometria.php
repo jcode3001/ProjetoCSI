@@ -38,18 +38,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label style="margin-left: 70px;" for="altura">Altura (m) :</label>
-                        <input class="form-control" type="text" id="altura" name="altura" min="0" max="3" step="0.01" onblur="imc();" /> <br>
+                        <input class="form-control" type="text" id="altura" placeholder="<?php echo $ALTURA;  ?>" name="altura" min="0" max="3" step="0.01" onblur="imc();" /> <br>
                     </div>
                     <div class="form-row">
                         <label style="margin-left: 70px;" for="altura">Imc :</label>
-                        <span  class="form-control" style="margin-left: 100px;" id="resultado"></span>
+                        <span  class="form-control" style="margin-left: 100px;" id="resultado" placeholder="<?php echo $IMC;  ?>" ></span>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label style="margin-left: 53px;" for="pesoAtual">Peso Atual (kg)</label>
-                        <input class="form-control" type="text" id="pesoAtual" name="pesoAtual" min="0" max="3" step="0.01" onblur="imc();" /> <br>
+                        <input class="form-control" type="text"  id="pesoAtual" placeholder="<?php echo $PESO;  ?>" name="pesoAtual" min="0" max="3" step="0.01" onblur="imc();" /> <br>
                     </div>
                 </div>    
                
